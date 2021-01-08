@@ -1,0 +1,132 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #b6b4ad;
+    font-family: "Open Sans";
+    overflow-y: hidden;
+}
+
+.trello-content{
+    color: white;
+    text-align: center;
+}
+
+button{
+    outline: none;
+    cursor: pointer;
+}
+
+
+.trello{
+    display: flex;
+    justify-content: flex-end;;
+}
+#addTrelloListDiv{
+    margin-right: 2em;
+    margin-top: 1em;
+}
+
+#addTrelloListDiv button{
+    margin-left: 0.5em;
+}
+
+
+#root{
+    margin: 1em;
+    min-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.trelloList{
+    border-radius: 4px;
+    min-height: 100px;
+    background: rgb(235, 235, 235);
+    padding: 0.7em;
+    margin: 1em 0 1em 1em;
+
+    float: left;
+}
+
+.trelloList h2{
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+#trello-list-button{
+    margin-left: 0.5em;
+}
+
+.card, .trello-header{
+    /*border: 1px solid blue;*/
+    border-radius: 4px;
+    border-bottom: rgb(180, 180, 180) 1px solid;
+    background: white;
+    margin: 0.5em 0 0 0;
+    padding: 0.5em;
+    font-size: 0.9em;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+.trello-header{
+    background:none;
+    border-bottom:none;
+}
+
+.card button, .trello-header button{
+    visibility: hidden;
+    height: max-content;
+
+    background: none;
+    border: none;
+    padding: 0.3em;
+    
+}
+
+
+.card:hover button,.trello-header:hover button{
+    visibility: visible;
+}
+
+.card button:hover, .trello-header button:hover{
+    background-color: rgb(235, 235, 235);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.comment{
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    font-size: 0.8em;
+}
+
+.commentsInput{
+    margin-right: 0.5em;
+}
+
+.btn-save{
+    background-color: #5aac44;
+    color: white;
+    border: none;
+    border-radius: 4px;
+
+    padding: 0.5em;
+    margin-top: 0.5em;
+    
+}
+
